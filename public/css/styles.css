@@ -1,0 +1,80 @@
+body{
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+footer{
+    color: #888888;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 16px;
+    padding: 16px 0;
+    
+}
+
+header{
+    margin-bottom: 48px;
+    margin-top: 5px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+ header a{              /*we use header a to only add style to headers links */
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.potrait {
+    width: 250px;
+    border-radius: 360px;
+}
+
+.icon{
+    margin-top: 20px; 
+    width: 60px;
+    height: 60px;
+}
+
+input{
+    border: 1px solid #CCCCCC;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+    margin-left: 8px; 
+    border-radius: 9px;
+}
+
+.img__description {
+    color: #555555;
+    visibility: hidden;
+    opacity: 0;
+    
+  }
+  
+  .main-content:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
