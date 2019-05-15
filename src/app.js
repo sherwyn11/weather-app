@@ -59,7 +59,7 @@ app.get('/weather',(req,res) => {
                 })
             }
             res.send({
-                forecast:data.summary + " Temperature is " + data.temperature + " degrees Celsius. There is "+data.Rainprobability + "% chance of rain.",
+                forecast:data.summary + " Temperature is " + data.temperature + " degrees Celsius. Maximum expected temperature today is "+ data.maxTemp +" degrees Celsius. Minimum expected temperature today is "+ data.minTemp +" degrees Celsius. There is "+data.Rainprobability + "% chance of rain. Humidity is "+ data.humidity+" gm/m3 and visibility is "+data.visibility+" m",
                 location: location,
                 address: req.query.address
             })  

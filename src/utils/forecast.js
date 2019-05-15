@@ -13,7 +13,11 @@ const forecast = (latitude,longitude,callback)=>{
             callback(undefined,{
                 summary: body.daily.data[0].summary,
                 temperature: body.currently.temperature,
-                Rainprobability: body.currently.precipProbability
+                Rainprobability: body.currently.precipProbability,
+                visibility: body.currently.visibility,
+                humidity: body.currently.humidity,
+                maxTemp: body.daily.data[0].temperatureHigh,
+                minTemp: body.daily.data[0].temperatureLow,
             })
         }   
     })
